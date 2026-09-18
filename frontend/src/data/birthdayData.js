@@ -1,9 +1,9 @@
 export const birthdayData = {
-  recipientName: "Beautiful",
-  senderName: "Alex",
+  recipientName: "Motu",
+  senderName: "Your Love",
 
   welcome: {
-    title: "Happy Birthday Beautiful ❤️🎂",
+    title: "Happy Birthday Motu ❤️🎂",
     subtitle: "Today is all about celebrating you.",
     button: "Start The Surprise",
   },
@@ -11,8 +11,8 @@ export const birthdayData = {
   letter: {
     heading: "A Letter Just For You",
     hint: "Tap the wax seal to open",
-    greeting: "My Dearest,",
-    body: `Happy Birthday, my love!\n\nToday the whole world quietly celebrates the day it became a softer, warmer, more magical place — the day you arrived.\n\nI hope you know how deeply loved you are. Not just today, but on every ordinary Tuesday, every sleepy morning, every moment in between. You turn the simplest days into memories I never want to forget.\n\nThank you for your laughter, your patience, your ridiculous jokes, and the way you make everyone around you feel seen. This year, I wish you everything you give so freely to others — joy, tenderness, and dreams that come true.\n\nNow scroll on... your surprise is only beginning.`,
+    greeting: "My Dearest Motu,",
+    body: `Happy birthday motuu. I’m just really really happy that I get to have you in my life. You make me so happy in the most random little ways, and I genuinely love having you around. I hope you have the best day because you deserve it, and I’m very happy I get to celebrate you. Love youuu. ❤️`,
     signature: "Forever & always, yours ❤️",
   },
 
@@ -32,20 +32,19 @@ export const birthdayData = {
   ],
 
   memories: [
-    { date: "June 12, 2022", title: "First Meeting", text: "The day our story quietly began. I had no idea my whole life was about to change.", image: "https://images.unsplash.com/photo-1556229868-7b2d4b56b909?auto=format&fit=crop&w=800&q=80" },
-    { date: "June 15, 2022", title: "First Chat", text: "We talked until 3 AM and it felt like five minutes. I fell asleep smiling.", image: "https://images.unsplash.com/photo-1531683944026-e56b930467ad?auto=format&fit=crop&w=800&q=80" },
-    { date: "July 2, 2022", title: "First Date", text: "Nervous hands, too much coffee, and the easiest conversation of my life.", image: "https://images.unsplash.com/photo-1615574147326-99d907ca408c?auto=format&fit=crop&w=800&q=80" },
-    { date: "December 31, 2023", title: "Favorite Moment", text: "Midnight, fireworks, and you. The whole world blurred except your face.", image: "https://images.pexels.com/photos/9451803/pexels-photo-9451803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" },
-    { date: "Every Single Day", title: "Best Memory Together", text: "Honestly? Every day with you quietly becomes the new best one.", image: "https://images.pexels.com/photos/36988586/pexels-photo-36988586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" },
+    { date: "Special Day", title: "Having You In My Life", text: "I’m just really really happy that I get to have you in my life.", image: "/images/motu1.png" },
+    { date: "Everyday Magic", title: "Random Little Ways", text: "You make me so happy in the most random little ways, and I genuinely love having you around.", image: "/images/motu2.png" },
+    { date: "Birthday Wishes", title: "The Best Day", text: "I hope you have the best day because you deserve it, and I’m very happy I get to celebrate you.", image: "/images/motu1.png" },
+    { date: "Forever & Always", title: "Love Youuu ❤️", text: "Out of billions of people, my heart chose you. Love youuu.", image: "/images/motu2.png" },
   ],
 
   photos: [
-    { url: "https://images.unsplash.com/photo-1556229868-7b2d4b56b909?auto=format&fit=crop&w=800&q=80", caption: "Sunset magic by the shore", date: "Summer '23" },
-    { url: "https://images.unsplash.com/photo-1531683944026-e56b930467ad?auto=format&fit=crop&w=800&q=80", caption: "Capturing endless memories", date: "Autumn '23" },
-    { url: "https://images.unsplash.com/photo-1615574147326-99d907ca408c?auto=format&fit=crop&w=800&q=80", caption: "Cozy music & acoustic vibes", date: "Winter '23" },
-    { url: "https://images.pexels.com/photos/9451803/pexels-photo-9451803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", caption: "Ribbons, laughter & celebration", date: "Spring '24" },
-    { url: "https://images.pexels.com/photos/36988586/pexels-photo-36988586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", caption: "Polaroid moments in frame", date: "Forever & Always" },
-    { url: "https://images.pexels.com/photos/1266130/pexels-photo-1266130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", caption: "Pink skies & softer days", date: "Always" },
+    { url: "/images/motu1.png", caption: "Forever & Always", date: "Love" },
+    { url: "/images/motu2.png", caption: "You make me so happy", date: "Together" },
+    { url: "/images/motu1.png", caption: "My Favorite Person", date: "Always" },
+    { url: "/images/motu2.png", caption: "Sweetest Moments", date: "Forever" },
+    { url: "/images/motu1.png", caption: "Love Youuu ❤️", date: "My Love" },
+    { url: "/images/motu2.png", caption: "Best Memories Together", date: "Special Day" },
   ],
 
   flavors: [
@@ -59,7 +58,7 @@ export const birthdayData = {
 
   final: {
     line1: "You make every day brighter.",
-    line2: "Thank you for being you ❤️",
-    credit: "Made with Love by Alex",
+    line2: "Happy Birthday Motu ❤️",
+    credit: "Made with Love",
   },
 };

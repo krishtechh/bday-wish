@@ -111,7 +111,7 @@ export const CelebrationSection = ({ celebrated, onReplay }) => {
                 filter: "drop-shadow(0 6px 24px var(--glow))",
               }}
             >
-              HAPPY BIRTHDAY ❤️
+              HAPPY BIRTHDAY MOTU ❤️
             </motion.h2>
 
             <motion.p
