@@ -1,0 +1,243 @@
+{
+  "project_title": "Interactive Pastel Pink Birthday Surprise Website",
+  "app_type": "landing_page (immersive single-page celebration experience)",
+  "emotional_archetype": "Pastel & Romantic Playful (Warm, Magical, Emotional, Interactive)",
+  "theme_strategy": {
+    "default_mode": "light",
+    "toggle_supported": true,
+    "light_palette": {
+      "bg_primary": "#FFF5F7",
+      "bg_secondary": "#FFEBF0",
+      "surface_card": "rgba(255, 255, 255, 0.75)",
+      "surface_border": "rgba(255, 182, 193, 0.5)",
+      "primary": "#FF6B8B",
+      "primary_hover": "#FF4A72",
+      "accent_rose": "#FF85A1",
+      "accent_gold": "#E5A93C",
+      "text_headline": "#4A1525",
+      "text_body": "#6B2D3E",
+      "text_muted": "#A36B78"
+    },
+    "dark_palette": {
+      "bg_primary": "#1A0B12",
+      "bg_secondary": "#260F1B",
+      "surface_card": "rgba(45, 18, 32, 0.75)",
+      "surface_border": "rgba(255, 107, 139, 0.25)",
+      "primary": "#FF4081",
+      "primary_hover": "#FF6598",
+      "accent_rose": "#FF7597",
+      "accent_gold": "#FFD166",
+      "text_headline": "#FFF0F5",
+      "text_body": "#E8C2CE",
+      "text_muted": "#B87D93"
+    }
+  },
+  "typography": {
+    "heading_font": "Cormorant Garamond, Playfair Display, serif",
+    "handwritten_font": "Dancing Script, cursive",
+    "body_font": "Plus Jakarta Sans, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-serif font-semibold",
+      "h3": "text-xl sm:text-2xl font-sans font-medium",
+      "body": "text-base sm:text-lg font-sans leading-relaxed",
+      "handwritten": "font-handwritten text-2xl sm:text-3xl"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-white/70 dark:bg-pink-950/40 border border-white/60 dark:border-pink-500/20 shadow-xl shadow-pink-500/5",
+    "floating_hearts_bg": "Continuous floating heart canvas / SVG particle overlay with random float-up animations, varying sizes, and soft opacity",
+    "card_effects": "Soft 3D card flips (180deg Y-rotation), polaroid hover tilts (-3deg to +3deg), light-beam highlights on active cards",
+    "confetti_fireworks": "canvas-confetti integration on candle blow and celebration screen reveal with custom pink, gold, and heart-shaped particles"
+  },
+  "key_sections": [
+    {
+      "id": "welcome_hero",
+      "name": "Welcome Screen",
+      "features": [
+        "Headline: 'Happy Birthday Beautiful ❤️🎂'",
+        "Subtext: 'A magical journey created just for you on your special day'",
+        "CTA Button: 'Start The Surprise' with pulsing heart glow and audio auto-prompt",
+        "Floating decorative elements: Balloons, sparkles, background soft glow rings",
+        "Data attribute: data-testid='hero-start-surprise-button'"
+      ]
+    },
+    {
+      "id": "envelope_letter",
+      "name": "Animated Love Letter",
+      "features": [
+        "Interactive wax-sealed pink envelope that opens with smooth 3D unfolding animation on tap/click",
+        "Letter paper pulls out with typewriter text effect revealing personal romantic birthday message",
+        "Controls: Pause/Resume typewriter, Replay animation, Skip to full text",
+        "Decorations: Dried flower stem visual accent, wax seal icon, romantic background lighting"
+      ]
+    },
+    {
+      "id": "reasons_grid",
+      "name": "12 Reasons Why You're Amazing",
+      "features": [
+        "Grid of 12 interactive 3D flip cards",
+        "Front side: Number tag, subtle cute icon (heart, star, crown, spark), hover tilt",
+        "Back side: Heartfelt reason text, romantic background pattern",
+        "Global Controls: 'Reveal Next' (reveals in order) and 'Reveal All' buttons",
+        "Progress indicator: e.g. '4 of 12 Reasons Unlocked ✨'"
+      ]
+    },
+    {
+      "id": "memory_timeline",
+      "name": "Our Memory Timeline",
+      "features": [
+        "Vertical progress line with animated glowing heart tracker as user scrolls",
+        "Alternating left/right slide-in cards for memory milestones",
+        "Card content: Date badge, location/title, memory quote, polaroid thumbnail",
+        "Micro-interactions: Hover zoom on milestone image, tap to open lightbox"
+      ]
+    },
+    {
+      "id": "polaroid_gallery",
+      "name": "Polaroid Masonry Gallery",
+      "features": [
+        "Masonry style layout with realistic polaroid frames (white border, tape on corners, handwritten caption)",
+        "Random subtle rotations (-2deg, +3deg, -1deg) for authentic scattered photo feel",
+        "Interactive Lightbox modal: Full image preview, zoom option, image description, and 'Send Heart Reaction' button with bursting heart animation"
+      ]
+    },
+    {
+      "id": "cake_builder",
+      "name": "Interactive Birthday Cake Studio",
+      "features": [
+        "Step 1: Select Flavor (Strawberry Blush, Chocolate Fudge, Vanilla Blossom, Pistachio Dream) - dynamic color changing cake layers",
+        "Step 2: Add Candles (Interactive slider or tap to add 1-10 candles on top of cake)",
+        "Step 3: Light Candles (Tap match/lighter or auto-light with flickering flame animations)",
+        "Step 4: 'Make A Wish' & Blow Candles Out - blow detection simulation or tap button -> flame switches to soft smoke particles",
+        "Triggers grand confetti celebration once candles are blown out"
+      ]
+    },
+    {
+      "id": "celebration_finale",
+      "name": "Celebration Screen & Final Message",
+      "features": [
+        "Explosion of colorful heart confetti & sparkles across screen",
+        "Floating balloons floating up into the sky",
+        "Grand banner: 'HAPPY BIRTHDAY ❤️'",
+        "Final emotional message card: 'You make every day brighter.'",
+        "Footer: 'Made with Love by [Name]' with animated pulsing heart",
+        "Replay entire surprise button"
+      ]
+    },
+    {
+      "id": "floating_controls",
+      "name": "Persistent Floating Controls",
+      "features": [
+        "Floating Music Player: Rotating vinyl disc with play/pause, volume toggle, track switcher, and animated audio wave bars",
+        "Floating Sticky Nav: Quick jumps to sections (Hero, Letter, Reasons, Memories, Gallery, Cake)",
+        "Theme Toggle: Switch between Pastel Light and Velvet Midnight Dark mode",
+        "Overall Experience Progress Bar at top of viewport"
+      ]
+    }
+  ],
+  "image_urls": {
+    "polaroid_gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1556229868-7b2d4b56b909?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA6MTJ8MHwxfHNlYXJjaHxfHxyb21hbnRpYyUyMGNvdXBsZSUyMGFlc3RoZXRpYyUyMHBvbGFyb2lkJTIwcGhvdG98ZW58MHx8fHwxNzg5NzUxNzYyfDA&ixlib=rb-4.1.0&q=85",
+        "caption": "Sunset Magic by the Shore 🌅",
+        "date": "Summer '23"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1531683944026-e56b930467ad?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA6MTJ8MHwxfHNlYXJjaHxfHxyb21hbnRpYyUyMGNvdXBsZSUyMGFlc3RoZXRpYyUyMHBvbGFyb2lkJTIwcGhvdG98ZW58MHx8fHwxNzg5NzUxNzYyfDA&ixlib=rb-4.1.0&q=85",
+        "caption": "Capturing endless memories 📸",
+        "date": "Autumn '23"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1615574147326-99d907ca408c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA6MTJ8MHwxfHNlYXJjaHxfHxyb21hbnRpYyUyMGNvdXBsZSUyMGFlc3RoZXRpYyUyMHBvbGFyb2lkJTIwcGhvdG98ZW58MHx8fHwxNzg5NzUxNzYyfDA&ixlib=rb-4.1.0&q=85",
+        "caption": "Cozy music & acoustic vibes 🎶",
+        "date": "Winter '23"
+      },
+      {
+        "url": "https://images.pexels.com/photos/9451803/pexels-photo-9451803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "caption": "Ribbons, laughter & celebration 🎀",
+        "date": "Spring '24"
+      },
+      {
+        "url": "https://images.pexels.com/photos/36988586/pexels-photo-36988586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "caption": "Polaroid moments in frame 💕",
+        "date": "Forever & Always"
+      }
+    ],
+    "cake_flavors": [
+      {
+        "flavor": "strawberry",
+        "name": "Strawberry Cream Dream",
+        "url": "https://images.unsplash.com/photo-1559553156-2e97137af16f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHw0fHxkZWxpY2lvdXMlMjBiaXJ0aGRheSUyMGNha2UlMjBhZXN0aGV0aWMlMjBwYXN0ZWx8ZW58MHx8fHwxNzg5NzUxNzYyfDA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "flavor": "vanilla",
+        "name": "Berry Vanilla Delight",
+        "url": "https://images.unsplash.com/photo-1545696563-af8f6ec2295a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwyfHxkZWxpY2lvdXMlMjBiaXJ0aGRheSUyMGNha2UlMjBhZXN0aGV0aWMlMjBwYXN0ZWx8ZW58MHx8fHwxNzg5NzUxNzYyfDA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "flavor": "chocolate",
+        "name": "Rich Velvet Chocolate",
+        "url": "https://images.unsplash.com/photo-1694043325785-d841a964257f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwzfHxkZWxpY2lvdXMlMjBiaXJ0aGRheSUyMGNha2UlMjBhZXN0aGV0aWMlMjBwYXN0ZWx8ZW58MHx8fHwxNzg5NzUxNzYyfDA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "flavor": "fondant",
+        "name": "Pastel Pink Celebration",
+        "url": "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHxkZWxpY2lvdXMlMjBiaXJ0aGRheSUyMGNha2UlMjBhZXN0aGV0aWMlMjBwYXN0ZWx8ZW58MHx8fHwxNzg5NzUxNzYyfDA&ixlib=rb-4.1.0&q=85"
+      }
+    ],
+    "background_decorations": [
+      {
+        "url": "https://images.unsplash.com/photo-1602615576820-ea14cf3e476a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w8NjA1NzB8MHwxfHNlYXJjaHwyfHxwYXN0ZWwlMjBwaW5rJTIwYWVzdGhldGljJTIwZmxvd2VycyUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzg5NzUxNzYyfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Soft pastel cherry blossoms for letter background"
+      },
+      {
+        "url": "https://images.pexels.com/photos/1266130/pexels-photo-1266130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Pink floral gradient texture"
+      }
+    ]
+  },
+  "motion_and_animations": {
+    "framework": "framer-motion + canvas-confetti + lucide-react",
+    "spring_physics": {
+      "gentle": "type: 'spring', stiffness: 200, damping: 20",
+      "bouncy": "type: 'spring', stiffness: 400, damping: 15"
+    },
+    "transitions": {
+      "card_flip": "duration: 0.6s, ease: 'easeInOut'",
+      "letter_unfold": "duration: 0.8s, ease: [0.16, 1, 0.3, 1]",
+      "page_scroll": "Lenis smooth scroll or native smooth scroll behavior"
+    }
+  },
+  "testing_requirements": {
+    "data_testid_convention": "kebab-case, role-based identifiers on buttons, cards, audio controls, theme toggle, lightbox, and cake step inputs",
+    "required_test_ids": [
+      "theme-toggle-button",
+      "music-player-toggle",
+      "music-player-disc",
+      "hero-start-surprise-button",
+      "open-letter-envelope-button",
+      "typewriter-pause-button",
+      "typewriter-skip-button",
+      "reason-card-flip-1",
+      "reveal-next-reason-button",
+      "reveal-all-reasons-button",
+      "timeline-card-0",
+      "polaroid-gallery-item-0",
+      "lightbox-modal-close-button",
+      "cake-flavor-strawberry-button",
+      "cake-candles-slider",
+      "light-candles-button",
+      "blow-candles-button",
+      "celebration-replay-button"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Create a modular single-page app architecture under src/components (Header, Hero, Letter, ReasonsGrid, Timeline, Gallery, CakeBuilder, Celebration, MusicPlayer, FloatingNav).",
+    "Ensure all text and memory content is centralized in a clean editable JSON/js configuration file (src/data/birthdayData.js).",
+    "Integrate canvas-confetti for the grand candle blow blowout celebration.",
+    "Support both light and dark mode with crisp glassmorphism cards and pastel pink accent glowing gradients.",
+    "Implement data-testid on all key interactive elements."
+  ]
+}

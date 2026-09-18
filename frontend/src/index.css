@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Dancing+Script:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+
+    --bg-primary: #fff5f7;
+    --bg-secondary: #ffebf0;
+    --surface: rgba(255, 255, 255, 0.75);
+    --surface-border: rgba(255, 182, 193, 0.5);
+    --pink: #ff6b8b;
+    --pink-hover: #ff4a72;
+    --rose: #ff85a1;
+    --gold: #e5a93c;
+    --headline: #4a1525;
+    --body-text: #6b2d3e;
+    --muted-text: #a36b78;
+    --glow: rgba(255, 107, 139, 0.35);
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+
+    --bg-primary: #1a0b12;
+    --bg-secondary: #260f1b;
+    --surface: rgba(45, 18, 32, 0.75);
+    --surface-border: rgba(255, 107, 139, 0.25);
+    --pink: #ff4081;
+    --pink-hover: #ff6598;
+    --rose: #ff7597;
+    --gold: #ffd166;
+    --headline: #fff0f5;
+    --body-text: #e8c2ce;
+    --muted-text: #b87d93;
+    --glow: rgba(255, 64, 129, 0.35);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--bg-primary);
+    color: var(--body-text);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background 0.5s ease, color 0.5s ease;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: "Cormorant Garamond", serif;
+}
+.font-hand {
+  font-family: "Dancing Script", cursive;
+}
+.glass {
+  background: var(--surface);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 20px 50px -20px var(--glow);
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(110vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: var(--heart-opacity, 0.3);
+  }
+  90% {
+    opacity: var(--heart-opacity, 0.3);
+  }
+  100% {
+    transform: translateY(-12vh) rotate(40deg);
+    opacity: 0;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    transform: scale(1) rotate(-2.5deg);
+  }
+  100% {
+    transform: scale(1.1, 1.25) rotate(2.5deg);
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes caretBlink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  95% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 var(--glow);
+  }
+  50% {
+    box-shadow: 0 0 40px 8px var(--glow);
+  }
+}
+
+.flame {
+  width: 12px;
+  height: 18px;
+  border-radius: 50% 50% 50% 50% / 62% 62% 38% 38%;
+  background: radial-gradient(circle at 50% 72%, #fff7ae 0%, #ffb03a 55%, #ff6b3a 92%);
+  box-shadow: 0 0 14px 5px rgba(255, 176, 58, 0.65);
+  animation: flicker 0.16s ease-in-out infinite alternate;
+  transform-origin: 50% 100%;
+}
+
+.candle-stick {
+  background: repeating-linear-gradient(45deg, #fff 0 4px, var(--pink) 4px 8px);
+}
+
+.typewriter-caret {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  background: var(--pink);
+  animation: caretBlink 1s steps(1) infinite;
+}
+
+.paper-lines {
+  background-color: #fffdf7;
+  background-image: repeating-linear-gradient(
+    transparent 0,
+    transparent 27px,
+    rgba(255, 133, 161, 0.25) 27px,
+    rgba(255, 133, 161, 0.25) 28px
+  );
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--rose);
+  border-radius: 99px;
+}
+
+::selection {
+  background: var(--pink);
+  color: #fff;
+}
+
+@layer base {
+  [data-debug-wrapper="true"] {
+    display: contents !important;
+  }
+}
