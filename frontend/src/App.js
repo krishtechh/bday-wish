@@ -9,7 +9,6 @@ import { MusicPlayer } from "./components/MusicPlayer";
 import { WelcomeSection } from "./components/WelcomeSection";
 import { LetterSection } from "./components/LetterSection";
 import { ReasonsSection } from "./components/ReasonsSection";
-import { TimelineSection } from "./components/TimelineSection";
 import { GallerySection } from "./components/GallerySection";
 import { CakeBuilderSection } from "./components/CakeBuilderSection";
 import { CelebrationSection, CELEBRATION_COLORS } from "./components/CelebrationSection";
@@ -63,7 +62,6 @@ function App() {
         <WelcomeSection onStart={handleStart} />
         <LetterSection />
         <ReasonsSection />
-        <TimelineSection />
         <GallerySection />
         <CakeBuilderSection key={resetKey} onBlow={handleBlow} />
         <CelebrationSection celebrated={celebrated} onReplay={handleReplay} />

@@ -40,11 +40,11 @@ export const birthdayData = {
 
   photos: [
     { url: "/images/motu1.png", caption: "Forever & Always", date: "Love" },
-    { url: "/images/motu2.png", caption: "You make me so happy", date: "Together" },
-    { url: "/images/motu1.png", caption: "My Favorite Person", date: "Always" },
+    { url: "/images/motu2.png", caption: "My Favorite Person", date: "Always" },
+    { url: "/images/motu3.png", caption: "Love Youuu ❤️", date: "My Love" },
+    { url: "/images/motu1.png", caption: "You Make Me So Happy", date: "Together" },
     { url: "/images/motu2.png", caption: "Sweetest Moments", date: "Forever" },
-    { url: "/images/motu1.png", caption: "Love Youuu ❤️", date: "My Love" },
-    { url: "/images/motu2.png", caption: "Best Memories Together", date: "Special Day" },
+    { url: "/images/motu3.png", caption: "Best Memories Together", date: "Special Day" },
   ],
 
   flavors: [

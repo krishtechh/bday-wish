@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import { FaHome, FaEnvelopeOpenText, FaHeart, FaClock, FaImages, FaBirthdayCake, FaGlassCheers, FaSun, FaMoon } from "react-icons/fa";
+import { FaHome, FaEnvelopeOpenText, FaHeart, FaImages, FaBirthdayCake, FaGlassCheers, FaSun, FaMoon } from "react-icons/fa";
 
 const SECTIONS = [
   { id: "welcome", label: "Home", Icon: FaHome },
   { id: "letter", label: "Letter", Icon: FaEnvelopeOpenText },
   { id: "reasons", label: "Reasons", Icon: FaHeart },
-  { id: "memories", label: "Memories", Icon: FaClock },
   { id: "gallery", label: "Gallery", Icon: FaImages },
   { id: "cake", label: "Cake", Icon: FaBirthdayCake },
   { id: "celebration", label: "Party", Icon: FaGlassCheers },

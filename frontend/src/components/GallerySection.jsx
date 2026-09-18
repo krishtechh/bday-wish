@@ -14,7 +14,7 @@ const Polaroid = ({ photo, index, onOpen }) => (
     viewport={{ once: true, margin: "-60px" }}
     whileHover={{ scale: 1.05, rotate: 0, zIndex: 10 }}
     transition={{ type: "spring", stiffness: 220, damping: 17 }}
-    className="relative block w-full break-inside-avoid mb-6 bg-white p-3 pb-5 rounded-md text-left"
+    className="relative block w-full bg-white p-3 pb-5 rounded-md text-left"
     style={{ boxShadow: "0 16px 34px -14px rgba(120,40,70,.35)" }}
   >
     <span
@@ -57,7 +57,7 @@ export const GallerySection = () => {
         </p>
       </motion.div>
 
-      <div className="mt-14 max-w-5xl mx-auto columns-2 md:columns-3 gap-6">
+      <div className="mt-14 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
         {photos.map((p, i) => (
           <Polaroid key={i} photo={p} index={i} onOpen={setSelected} />
         ))}
